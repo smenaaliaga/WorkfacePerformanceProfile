@@ -22,6 +22,10 @@ if (empty($results)) {
 
 
 function getstyle(){
+	
+	echo'<link href="themes/style-color-3.css" rel="stylesheet">';
+	
+	/*
 // conexon a base de datos
 $conexion = Conexion::singleton_conexion();
 
@@ -36,6 +40,7 @@ $conexion = Conexion::singleton_conexion();
 			echo'<link href="themes/style-color-'.$key['style'].'.css" rel="stylesheet">';
 		}
 	}
+	*/
 }
 
 
@@ -772,7 +777,17 @@ function isAdmin(){
 
 
 function saustatus(){
-
+	
+	    echo'
+           <form id="form-login" method="POST" action="">
+             <label>Email:</label>
+             <input class="form-control" type="text" name="mail">
+             <label>Contraseña:</label>
+             <input class="form-control" type="password" name="password"><p></p>
+             <button type="submit" class="btn btn-default pull-right"><i class="fa fa-power-off"></i> Iniciar sesión</button>        
+           </form>
+         ';
+/*
 // conexon a base de datos
 $conexion = Conexion::singleton_conexion();
 
@@ -803,6 +818,6 @@ if (empty($results)) {
 
   }
 }
-
+*/
 
 }
