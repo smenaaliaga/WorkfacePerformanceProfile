@@ -147,6 +147,10 @@ class Login
 
 
 function getstyle(){
+	
+	echo'<link href="../themes/style-color-3.css" rel="stylesheet">';
+	
+	/*
 // conexon a base de datos
 $conexion = Conexion::singleton_conexion();
 
@@ -160,7 +164,7 @@ $conexion = Conexion::singleton_conexion();
 		foreach ($results as $key){
 			echo'<link href="../themes/style-color-'.$key['style'].'.css" rel="stylesheet">';
 		}
-	}
+		*/
 }
 
 
